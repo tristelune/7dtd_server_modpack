@@ -8,9 +8,9 @@ fi
 mkdir mods
 chmod -R 777 mods
 cd mods
-wget https://raw.githubusercontent.com/tristelune/7dtd_server_modpack/main/server/mods_list
+wget https://raw.githubusercontent.com/tristelune/7dtd_server_modpack/main/server/mods_list.txt
 
-inputfile="mods_list"
+inputfile="mods_list.txt"
 while IFS=, read -r y
 do
 mkdir $y
