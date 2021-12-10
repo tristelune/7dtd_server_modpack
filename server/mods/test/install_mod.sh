@@ -1,1 +1,1 @@
-echo test work fine > ~/test_result.txt
+echo test work fine
