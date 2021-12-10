@@ -7,5 +7,5 @@ wget --timestamping --no-check-certificate https://raw.githubusercontent.com/tri
 inputfile="mod_list"
 while IFS=, read -r y
 do
-cp -r ~/mods/$ken_mod_familly_name/$y ~/serverfiles/Mods/$y
+cp -r .$ken_mod_familly_name/$y ~/serverfiles/Mods/$y
 done < $inputfile
