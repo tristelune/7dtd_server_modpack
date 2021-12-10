@@ -1,4 +1,7 @@
 cd ~
+pkg-name=git
+dpkg -s $pkg-name 2>/dev/null >/dev/null || sudo apt-get -y install $pkg-name
+
 if [ ! -d "~/serverfiles/Mods" ] 
 then
 	mkdir -p ~/serverfiles/Mods
