@@ -18,9 +18,9 @@ cd $y
 wget https://raw.githubusercontent.com/tristelune/7dtd_server_modpack/main/server/mods/$y/install_mod.sh
 sh ./install_mod.sh
 cd ..
-rmdir -rf $y
+rm -rf $y
 done < $inputfile
 
 cd ..
-rmdir -rf mods
+rm -rf mods
 
