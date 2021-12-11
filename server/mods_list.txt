@@ -1,2 +1,3 @@
 KhaineA20ModletsXML
+KhaineA20ModletsHarmony
 test

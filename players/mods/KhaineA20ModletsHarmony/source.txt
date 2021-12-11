@@ -1,0 +1,18 @@
+https://community.7daystodie.com/topic/25751-khaines-a20-modlets-bigger-backpacks-lockable-slots-behemoths-random-wandering-hordes-etc/
+
+
+C# Modlets (cannot be server only, EAC must be off!!!).
+
+15 Slot Toolbelt - Increases the toolbelt to 15 slots.
+
+Extra Tool And Output Slots - This is mostly for other modders. It increases the maximum amount of tools a workstation can have to 6 (so stops duplicating anything after slot 3) and the maximum output slots to 12 (was 6).
+
+Larger FOV - Increases the max FOV to 150, though anything above 90 is a bit distorted. Might be good for folks with motion sickness.
+
+Vehicle Damage Patch - Increases the amount of damage a zombie takes when you run it over. Amount of damage depends on how heavy the vehicle is and how fast you hit the zombie.
+
+Vehicle Sound Fix - This is more for modders. It fixes that horrible noise when driving custom vehicles.
+
+Wandering Horde Frequency - Folks may know this from JaWoodle's "Anywhere, Anytime" series. It creates random wandering hordes, of a random amount of zombies, a random amount of times per day. How often (in terms of in-game hours) and how many zombies are configurable in the blocks.xml included in the modlet.
+
+Zombie Fall Damage - Removes the cap on the amount of damage zombies take when falling from heights, so drop pits from older alphas are now a semi-valid form of defense. 

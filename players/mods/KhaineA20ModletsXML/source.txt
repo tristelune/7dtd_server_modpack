@@ -1,0 +1,45 @@
+https://community.7daystodie.com/topic/25751-khaines-a20-modlets-bigger-backpacks-lockable-slots-behemoths-random-wandering-hordes-etc/
+
+XML Only Modlets (can be installed on servers with no client download).
+
+ 
+
+3 Slot Forge - Adds an extra input slot to the forge and moves the UI around a little so there's no window overlap.
+
+12 Slot Crafting Queue - Increases the crafting queue from 4 slots to 12. Scrap everything!
+
+60 Slot Backpack - Pretty self explanitory.
+
+96 Slot Backpack - Pretty self explanitory.
+
+Always Open Traders - Removed the open/close times from traders so they always remain open.
+
+Dangerous Cities - Increases the amount of zombies in cities and towns, while lowering the amount in the wilderness.
+
+Food and Water Bars - Just the food and water bars from my above backpack mods so users can use larger backpacks if they so wish.
+
+Headshot Only - Zombies take 0 damage from non-headshots for most weapons. Explosives, electric batons and molotovs still work normally, and animals still take full damage.
+
+HP Bars - Remember the red HP bar that was shown off in A17? This adds that back into the game for folks who liked that idea.
+
+Kill Tracking - Tracks how many of each different type of entity you've killed in the game (zombie or type of animal) and with what weapon (guns only, may consider adding melee in the future).
+
+Lockable Inventory Slots - Adds the "box" that allows the user to lock slots so they won't be moved OR sorted. Also adds one to vehicle inventory that does the same thing.
+
+NightVision Goggles Change - A few folks said they wanted the NVG effect from DF in vanilla, so it's more red than full green. This modlet will do that.
+
+Pickup Plants - Allows the player to press the 'E' button (default. May be different for other languages/controllers) to pick up plants. This does NOT grant extra harvest based on perk. You have to punch for that.
+
+Max Animals/Zombies and Claim Blocks - Adds options to the main menu for the player to select max spawned animals/zombies in the world in SP. Also allows the player to have more than 1 claim block via menu option.
+
+Steel Ammo - Adds the steel ammo from A17 for players who enjoyed that option.
+
+ 
+
+XML + Assets Modlets (cannot be server only).
+
+Log Spikes - Makes Wood Log and Iron Spikes craftable again.
+
+Return of the Behemoth - Adds the unfinished A16 behemoth and the A17 unfinished radiated behemoth to the game. Random spawns in the wasteland and horde nights.
+
+Return of the Hornet - Adds the cut hornet from A15 (and earlier) back to the game. Spawns as an enemy animal in the forest biome. Does not spawn on horde nights. 
