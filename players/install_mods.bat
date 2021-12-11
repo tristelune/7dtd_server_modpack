@@ -1,5 +1,7 @@
 CD /d "%~dp0"
 
+rem to download git : https://github.com/git-for-windows/git/releases/download/v2.34.1.windows.1/PortableGit-2.34.1-64-bit.7z.exe
+
 REM check if in game folder if not exit
 IF NOT EXIST 7DaysToDie.exe (
 echo must be run in 7dtd game root folder (where the game executable 7DaysToDie.exe is)
