@@ -1,0 +1,5 @@
+# to download git : 
+
+https://github.com/KhaineGB/KhaineA20ModletsHarmony/archive/refs/heads/main.zip
+
+https://github.com/KhaineGB/KhaineA20ModletsXML/archive/refs/heads/main.zip
