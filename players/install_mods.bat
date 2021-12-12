@@ -1,5 +1,5 @@
 @echo off
-
+set mod_folder_name=Mods
 CD /d "%~dp0"
 set current_folder="%CD%"
 REM check if in game folder if not exit
@@ -12,7 +12,7 @@ goto end
 )
  
 REM check if mod folder exist if not create it 
-IF NOT EXIST Mods/ md Mods
+IF NOT EXIST %mod_folder_name%/ md %mod_folder_name%
 
 REM create temp folder for installation
 md temp_mods
@@ -22,7 +22,7 @@ REM download powershell installation script
 set url_name=https://raw.githubusercontent.com/tristelune/7dtd_server_modpack/main/players/
 set file_name=install_mods.ps1
 powershell.exe -Command "Invoke-WebRequest -OutFile ./%file_name% %url_name%/%file_name%"
-Powershell -ExecutionPolicy bypass -file "%file_name%" %current_folder%
+Powershell -ExecutionPolicy bypass -file "%file_name%" %current_folder% %mod_folder_name%
 
 CD /d "%~dp0"
 IF EXIST temp_mods/ rd /s /q temp_mods
