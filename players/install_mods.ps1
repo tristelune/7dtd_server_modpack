@@ -1,3 +1,6 @@
+###############################################
+# variables                                   #
+###############################################
 #read script arguments
 $game_folder_path=$args[0]
 $game_mods_folder_name=$args[1]
@@ -13,9 +16,19 @@ $sub_cat_1_url=$repo_url_name + '/' + $sub_cat_1
 $sub_cat_2='mods'
 $sub_cat_2_url=$sub_cat_1_url + '/' + $sub_cat_2
 
+#set mods list file name
+$mods_list_file_name="mod_list.txt"
+
+#set mod install script name
+$mod_install_script_name="install_mod.ps1"
+
+###############################################
+# traitement                                  #
+###############################################
+
 #download mods list file
 $url_name = $sub_cat_1_url
-$file_name = "mod_list.txt"
+$file_name = $mods_list_file_name
 Invoke-WebRequest -OutFile ./$file_name $url_name/$file_name
 
 #read mods list file
@@ -29,7 +42,7 @@ New-Item -ItemType directory -Path "$mod" -Force
 cd $mod
 #download mod script
 $url_name = $sub_cat_2_url + '/' + $mod
-$file_name = "install_mod.ps1"
+$file_name = $mod_install_script_name
 Invoke-WebRequest -OutFile ./$file_name $url_name/$file_name
 
 #run mod script and pass to it : game folder path, game mods folder name, current mod name, gith hub url for current mod

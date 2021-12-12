@@ -1,3 +1,21 @@
 $url_name = ""
 $file_name =""
 Invoke-WebRequest -OutFile ./$file_name $url_name/$file_name
+
+$commande='./' + $file_name + ' ' + $args[0] + ' ' + $args[1]
+
+ # $path1=split-path -path $line -parent
+ # $path2=split-path -path $path1 -noqualifier
+ # $path=$files_path+$path2
+ # New-Item -ItemType directory -Path "$path" -Force
+ # copy-item -path "$line" -destination "$path" -Force
+
+
+###############################################
+# variables                                   #
+###############################################
+
+
+###############################################
+# traitement                                  #
+###############################################
