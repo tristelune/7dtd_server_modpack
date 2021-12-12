@@ -46,24 +46,35 @@ then
 	mkdir -p $server_mods_folder_path
 fi
 
-
+# make temporary folder for mods installation
 mkdir $temp_mods_folder_name
+# grant full right to everyone on folder and subfolder to avoir deletion errors
 chmod -R 777 $temp_mods_folder_name
+#go to temporary folder for mods installation
 cd $temp_mods_folder_name
+#get mods list to install
 wget --timestamping --no-check-certificate $sub_cat_1_url/$mods_list_file_name
-
+# read and proceed  mods list to install 
 inputfile="$mods_list_file_name"
 while IFS=, read -r y
 do
+#create current mod folder 
 mkdir $y
+# grant full right to everyone on folder and subfolder to avoir deletion errors
 chmod -R 777 $y
+#go to current mod folder 
 cd $y
+#get current mod installation script from github
 wget --timestamping --no-check-certificate $sub_cat_2_url/$y/$mod_script_file_name
+#run current mod installation script
 sh ./$mod_script_file_name
+#go out of current mod folder 
 cd ..
+#remove current mod folder 
 rm -rf $y
 done < $inputfile
-
+#go out of temporary folder for mods installation
 cd ..
+#remove temporary folder for mods installation
 rm -rf $temp_mods_folder_name
 
