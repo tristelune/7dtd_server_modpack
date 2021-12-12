@@ -45,5 +45,7 @@ $file_read=get-content -Path $PSScriptRoot\$file_name | Where-Object { $_.Trim()
 # copy each mod to mod folder
 foreach ($mod in $file_read) 
 {
+write-host $mod
+pause
 robocopy .\$out_path\$mod_name-main\$mod  $game_folder_path\$game_mods_folders_name\$mod /mir
 }
