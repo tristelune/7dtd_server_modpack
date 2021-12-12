@@ -1,5 +1,6 @@
-set ken_mod_familly_name=KhaineA20ModletsHarmony
+set mod_name=KhaineA20ModletsHarmony
 
 
-Write-Host "test"
-pause
+$url_name = "https://raw.githubusercontent.com/tristelune/7dtd_server_modpack/main/players/mods/$mod_name"
+$file_name = "mod_list.txt"
+Invoke-WebRequest -OutFile ./$file_name $url_name/$file_name

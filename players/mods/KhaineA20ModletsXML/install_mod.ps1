@@ -1,1 +1,1 @@
-ken_mod_familly_name=KhaineA20ModletsXML
+mod_name=KhaineA20ModletsXML
