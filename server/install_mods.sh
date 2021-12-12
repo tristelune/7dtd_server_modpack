@@ -24,7 +24,10 @@ server_mods_folder_path=$server_folder_path/$server_mods_folder_name
 temp_mods_folder_name=temp_mods
 
 #set mods list file name 
-mods_list_file_name="mods_list.txt"
+mods_list_file_name=mods_list.txt
+
+#set mod script file name
+mod_script_file_name=install_mod.sh
 
 ###############################################
 # traitement                                  #
@@ -49,14 +52,14 @@ chmod -R 777 $temp_mods_folder_name
 cd $temp_mods_folder_name
 wget --timestamping --no-check-certificate $sub_cat_1_url/$mods_list_file_name
 
-inputfile=$mods_list_file_name
+inputfile="$mods_list_file_name"
 while IFS=, read -r y
 do
 mkdir $y
 chmod -R 777 $y
 cd $y
-wget --timestamping --no-check-certificate $sub_cat_2_url/$y/$mods_list_file_name
-sh ./$mods_list_file_name
+wget --timestamping --no-check-certificate $sub_cat_2_url/$y/$mod_script_file_name
+sh ./$mod_script_file_name
 cd ..
 rm -rf $y
 done < $inputfile
