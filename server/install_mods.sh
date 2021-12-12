@@ -58,22 +58,22 @@ cd $temp_mods_folder_name
 wget --timestamping --no-check-certificate $sub_cat_1_url/$mods_list_file_name
 # read and proceed  mods list to install 
 inputfile="$mods_list_file_name"
-while IFS=, read -r y
+while IFS=, read -r mode_name
 do
 #create current mod folder 
-mkdir $y
+mkdir $mode_name
 # grant full right to everyone on folder and subfolder to avoir deletion errors
-chmod -R 777 $y
+chmod -R 777 $mode_name
 #go to current mod folder 
-cd $y
+cd $mode_name
 #get current mod installation script from github
-wget --timestamping --no-check-certificate $sub_cat_2_url/$y/$mod_script_file_name
+wget --timestamping --no-check-certificate $sub_cat_2_url/$mode_name/$mod_script_file_name
 #run current mod installation script
-sh ./$mod_script_file_name
+sh ./$mod_script_file_name "$server_folder_path" "$server_mods_folder_name" "$mode_name" "$sub_cat_2_url/$mode_name"
 #go out of current mod folder 
 cd ..
 #remove current mod folder 
-rm -rf $y
+rm -rf $mode_name
 done < $inputfile
 #go out of temporary folder for mods installation
 cd ..
