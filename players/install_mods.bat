@@ -15,6 +15,9 @@ set mod_folder_name=Mods
 REM set temp folder name
 set temp_mod_install_folder_name=temp_mods
 
+REM game file to check
+set game_file_test=7DaysToDie.exe
+
 REM ###############################################
 REM # traitement                                  #
 REM ###############################################
@@ -23,7 +26,7 @@ REM go to script folder
 CD /d "%~dp0"
 set current_folder="%CD%"
 REM check if in game folder if not exit
-IF NOT EXIST 7DaysToDie.exe (
+IF NOT EXIST %game_file_test% (
 echo ***********************************************************************************
 echo must be run in 7dtd game root folder where the game executable 7DaysToDie.exe is
 echo ***********************************************************************************
