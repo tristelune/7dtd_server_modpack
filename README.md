@@ -1,8 +1,8 @@
 # 7dtd_server_modpack player install
-Download install script :
+Download install script zip file :
 https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tristelune/7dtd_server_modpack/blob/main/players/install_mods.bat
 
-Copy it into your 7 day to die game folder
+extract the zip file and copy install_mods.bat into your 7 day to die game folder
 
 Run it 
 
