@@ -1,0 +1,3 @@
+$url_name = ""
+$file_name =""
+Invoke-WebRequest -OutFile ./$file_name $url_name/$file_name
