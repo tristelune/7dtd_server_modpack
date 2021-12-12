@@ -1,4 +1,13 @@
-mod_name=KhaineA20ModletsHarmony
+###############################################
+# variables                                   #
+###############################################
+
+# read parametters 
+mod_name=$1 
+
+###############################################
+# traitement                                  #
+###############################################
 
 GIT_SSL_NO_VERIFY=true git clone https://github.com/KhaineGB/$mod_name.git
 

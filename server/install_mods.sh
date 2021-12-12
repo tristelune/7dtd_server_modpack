@@ -1,12 +1,14 @@
+###############################################
+# variables                                   #
+###############################################
+
 #set repository url
 repo_url_name=https://raw.githubusercontent.com/tristelune/7dtd_server_modpack/main
 
 #repository for server scripts sub folder name
 sub_cat_1=server
 sub_cat_1_url=$repo_url_name/$sub_cat_1
-###############################################
-# variables                                   #
-###############################################
+
 #repository for mods scripts sub folder name under sub_cat_1 folder
 sub_cat_2=mods
 sub_cat_2_url=$sub_cat_1_url/$sub_cat_2

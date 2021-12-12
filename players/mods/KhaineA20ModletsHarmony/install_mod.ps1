@@ -1,3 +1,7 @@
+###############################################
+# variables                                   #
+###############################################
+
 #set game mods folder
 $game_mods_folders_name=$args[1]
 
@@ -16,6 +20,10 @@ $mod_list_file_name="mod_list.txt"
 #set link to mod files archive to download
 $mod_archive_url="https://github.com/KhaineGB/$mod_name/archive/refs/heads/"
 $mod_archive_file_name="main.zip"
+
+###############################################
+# traitement                                  #
+###############################################
 
 #download modlist
 $url_name = $mod_script_url
