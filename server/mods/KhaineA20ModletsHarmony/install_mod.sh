@@ -1,4 +1,4 @@
-set mod_name=KhaineA20ModletsHarmony
+mod_name=KhaineA20ModletsHarmony
 
 GIT_SSL_NO_VERIFY=true git clone https://github.com/KhaineGB/$mod_name.git
 
