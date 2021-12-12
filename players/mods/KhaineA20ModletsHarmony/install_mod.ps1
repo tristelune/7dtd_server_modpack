@@ -41,7 +41,7 @@ $out_path=$mod_archive_file_name.SubString(0,$mod_archive_file_name.Length-4)
 Expand-Archive -Path .\$file_name -DestinationPath .\$out_path -Force
 
 #read content of mod list 
-write-host ($PSScriptRoot\$file_name)
+write-host $PSScriptRoot\$file_name
 pause
 
 $file_read=get-content -Path $PSScriptRoot\$file_name | Where-Object { $_.Trim() -ne '' }
