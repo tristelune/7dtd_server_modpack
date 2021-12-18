@@ -1,6 +1,6 @@
 $url_name = ""
 $file_name =""
-Invoke-WebRequest -OutFile ./$file_name $url_name/$file_name
+Invoke-WebRequest -OutFile .\$file_name $url_name/$file_name
 
 $commande='./' + $file_name + ' ' + $args[0] + ' ' + $args[1]
 
