@@ -4,11 +4,10 @@
 #read script arguments
 $game_folder_path=$args[0]
 $game_mods_folder_name=$args[1]
-#url mod folder name
-$sub_cat_2=$args[2]
+
 
 #set mods list file name
-$mods_list_file_name=$args[3]
+$mods_list_file_name=$args[2]
 
 #repository main url
 $repo_url_name="https://raw.githubusercontent.com/tristelune/7dtd_server_modpack/main"
@@ -18,6 +17,7 @@ $sub_cat_1='players'
 $sub_cat_1_url=$repo_url_name + '/' + $sub_cat_1
 
 #repository for mods scripts sub folder name under sub_cat_1 folder
+$sub_cat_2='mods'
 $sub_cat_2_url=$sub_cat_1_url + '/' + $sub_cat_2
 
 
