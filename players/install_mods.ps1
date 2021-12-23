@@ -4,6 +4,11 @@
 #read script arguments
 $game_folder_path=$args[0]
 $game_mods_folder_name=$args[1]
+#url mod folder name
+$sub_cat_2=$args[2]
+
+#set mods list file name
+$mods_list_file_name=$args[3]
 
 #repository main url
 $repo_url_name="https://raw.githubusercontent.com/tristelune/7dtd_server_modpack/main"
@@ -13,11 +18,9 @@ $sub_cat_1='players'
 $sub_cat_1_url=$repo_url_name + '/' + $sub_cat_1
 
 #repository for mods scripts sub folder name under sub_cat_1 folder
-$sub_cat_2='mods'
 $sub_cat_2_url=$sub_cat_1_url + '/' + $sub_cat_2
 
-#set mods list file name
-$mods_list_file_name="mod_list.txt"
+
 
 #set mod install script name
 $mod_install_script_name="install_mod.ps1"
@@ -46,7 +49,7 @@ $file_name = $mod_install_script_name
 Invoke-WebRequest -OutFile ./$file_name $url_name/$file_name
 
 #run mod script and pass to it : game folder path, game mods folder name, current mod name, gith hub url for current mod
-$commande='./' + $file_name + ' ' + $game_folder_path + ' ' + $game_mods_folder_name + ' ' + $mod + ' ' + $url_name 
+$commande='./' + $file_name + ' ' + $game_folder_path + ' ' + $game_mods_folder_name + ' ' + $mod + ' ' + $url_name + '' + $mods_list_file_name
 invoke-expression -Command $commande
 
 #get out of current mod folder before next loop for next mod

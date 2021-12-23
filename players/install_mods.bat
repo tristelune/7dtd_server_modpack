@@ -18,6 +18,9 @@ set temp_mod_install_folder_name=temp_mods
 REM game file to check
 set game_file_test=7DaysToDie.exe
 
+REM mods list file name
+set mods_list_file_name=mods_list.txt
+
 REM ###############################################
 REM # traitement                                  #
 REM ###############################################
@@ -45,7 +48,7 @@ REM download powershell installation script
 set url_name=%repo_url_name%
 set file_name=%mods_install_script_name%
 powershell.exe -Command "Invoke-WebRequest -OutFile ./%file_name% %url_name%/%file_name%"
-Powershell -ExecutionPolicy bypass -file "%file_name%" "%current_folder%" "%mod_folder_name%"
+Powershell -ExecutionPolicy bypass -file "%file_name%" "%current_folder%" "%mod_folder_name%" "%mods_list_file_name%"
 
 CD /d "%~dp0"
 IF EXIST %temp_mod_install_folder_name%/ rd /s /q %temp_mod_install_folder_name%
