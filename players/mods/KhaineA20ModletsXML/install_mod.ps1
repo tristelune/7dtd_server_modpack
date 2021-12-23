@@ -15,7 +15,7 @@ $mod_name=$args[2]
 $mod_script_url=$args[3]
 
 #set mod list file ghitub link 
-$mod_list_file_name=$args[3]
+$mod_list_file_name=$args[4]
 
 #set link to mod files archive to download
 $mod_archive_url="https://github.com/KhaineGB/$mod_name/archive/refs/heads/"
