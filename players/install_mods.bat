@@ -31,7 +31,7 @@ set current_folder="%CD%"
 REM check if in game folder if not exit
 IF NOT EXIST %game_file_test% (
 echo ***********************************************************************************
-echo must be run in 7dtd game root folder where the game executable 7DaysToDie.exe is
+echo must be run in 7dtd game root folder where the game executable %game_file_test% is
 echo ***********************************************************************************
 pause
 goto end
