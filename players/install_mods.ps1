@@ -49,7 +49,7 @@ $file_name = $mod_install_script_name
 Invoke-WebRequest -OutFile ./$file_name $url_name/$file_name
 
 #run mod script and pass to it : game folder path, game mods folder name, current mod name, gith hub url for current mod
-$commande='./' + $file_name + ' ' + $game_folder_path + ' ' + $game_mods_folder_name + ' ' + $mod + ' ' + $url_name + '' + $mods_list_file_name
+$commande='./' + $file_name + ' ' + $game_folder_path + ' ' + $game_mods_folder_name + ' ' + $mod + ' ' + $url_name + ' ' + $mods_list_file_name
 invoke-expression -Command $commande
 
 #get out of current mod folder before next loop for next mod
