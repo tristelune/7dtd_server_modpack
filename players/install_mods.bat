@@ -27,7 +27,7 @@ REM ###############################################
 
 REM go to script folder
 CD /d "%~dp0"
-set current_folder="%CD%"
+set current_folder='%CD%'
 REM check if in game folder if not exit
 IF NOT EXIST %game_file_test% (
 echo ***********************************************************************************
