@@ -1,4 +1,12 @@
 # 7dtd_server_modpack : joueur installation
+Step 1  
+Désactiver EAC (Nécéssaire pour le mod tool belt):
+Allez dans votre dossier d'installation de 7dtd et démarer le launcher :
+steamapps\common\7 Days To Die\7dLauncher.exe
+Puis désactiver l'options *user Easy Anti Cheat (EAC)* 
+Clicker sur *Run & Save as default* boutton
+
+Step 2
 Télécharger le script d'installation au format zip:  
 https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tristelune/7dtd_server_modpack/blob/main/players/install_mods.bat
 
@@ -18,7 +26,15 @@ Cocher la case *Débloquer*
 Clicker sur OK  
 Lancer le script *install_mods.bat*  
 
-# Installer tous les mods pour une partie solo 
+# Installer tous les mods pour utiliser la même configuration de mods que le serveur dans une partie solo 
+Step 1  
+Désactiver EAC (Nécéssaire pour le mod tool belt):
+Allez dans votre dossier d'installation de 7dtd et démarer le launcher :
+steamapps\common\7 Days To Die\7dLauncher.exe
+Puis désactiver l'options *user Easy Anti Cheat (EAC)* 
+Clicker sur *Run & Save as default* boutton
+
+Step 2
 Télécharger le script d'installation au format zip:  
 https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/tristelune/7dtd_server_modpack/blob/main/players/install_mods_solo.bat
 
