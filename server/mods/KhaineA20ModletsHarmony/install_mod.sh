@@ -26,6 +26,7 @@ wget --timestamping --no-check-certificate $mod_script_url/$mod_list_file_name
 inputfile="$mod_list_file_name"
 while IFS=, read -r mod_componant_name
 do
+rm -rf $server_folder_path/$server_mods_folder_name/$mod_componant_name
 cp -r ./$mod_name/$mod_componant_name $server_folder_path/$server_mods_folder_name/$mod_componant_name
 done < $inputfile
 
